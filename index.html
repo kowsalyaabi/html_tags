@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Cascading Style Sheet</title>
+    <link rel="stylesheet" href="./styles.css">
+    <style>
+        section {
+            padding: 20px;
+            margin: 20px;
+            border: 4px double #C4DFDF;
+            transition: background-color 0.8s;
+        }
+        section:target{
+            background-color:#C4DFDF;
+        }
+        .example {
+            display: none;
+            background-color: #C4DFDF;
+            padding: 20px;
+            margin: 20px;
+            border: 1px solid #C4DFDF;
+        }
+        .example:target {
+            display: block;
+        }
+    </style>
+</head>
+
+<body style="background-color: #E3F4F4;">
+<div style="background-color: #D2E9E9;"  class="navbar">
+    <div class="head"><a >HTML TAG LIST</a></div>
+    <div><a href="#list">Lists</a></div>
+    <div><a href="#table">Table</a></div>
+    <div><a href="#heading">Heading</a></div>
+    <div><a href="#paragraph">Paragraph</a></div>
+    <div><a href="#hr">Horizontal line</a></div>
+</div>
+
+<section id="list">
+    <div>
+        <h3>List</h3>
+        <ul>
+            <li>In HTML, a list is a way to organize and present related information. There are three main types:</li>
+               <ul>
+                <dl>
+                    <dt><li><b>Ordered List (&ltol&gt):</b></li></dt>
+                    <dd><li>Items are numbered sequentially.</li></dd>
+                    <dd><a href="#listolexample" >See Example</a></dd>
+                </dl>
+                <dl>
+                    <dt><li><b>Unordered List (&ltul&gt):</b></li></dt>
+                    <dd><li>Items are bulleted.</li></dd>
+                    <dd><a href="#listulexample" target="frame3">See Example</a></dd>
+                </dl>
+                <dl>
+                    <dt><li><b>Description List (&ltdl&gt):</b></li></dt>
+                    <dd><li>Terms and their definitions.</li></dd>
+                    <dd><a href="#listdlexample" target="frame3">See Example</a></dd>
+                </dl>
+               </ul>
+        </ul>
+    </div>
+    <div id="listolexample" class="example">
+        <h3>Ordered List Example</h3>
+        <ol>
+            <li>apple</li>
+            <li>orange</li>
+            <li>banana</li>
+        </ol>
+    </div>
+    <div id="listulexample" class="example">
+        <h3>Unordered List Example</h3>
+        <ul>
+            <li>apple</li>
+            <li>orange</li>
+            <li>banana</li>
+        </ul>
+    </div>
+    <div id="listdlexample" class="example">
+        <h3>Description List Example</h3>
+        <dl>
+            <dt>Fruits</dt>
+            <dd>apple</dd>
+            <dd>orange</dd>
+            <dt>Vegetables</dt>
+            <dd>Tomato</dd>
+            <dd>Potato</dd>
+        </dl>
+    </div>
+</section>
+
+<section id="table">
+    <div>
+        <h3>Table (&lttable>):</h3>
+        <p>Creates structured grids for displaying data in rows and columns.</p>
+        <a href="#tableexample" >See Example</a>
+    </div>
+    <div id="tableexample" class="example">
+        <h3>Table Example</h3>
+        <table border="1">
+            <tr>
+                <th>S.No.</th>
+                <th>Name</th>
+                <th>Age</th>
+            </tr>
+            <tr>
+                <td>1.</td>
+                <td>KOWSALYA R</td>
+                <td>19</td>
+            </tr>
+            <tr>
+                <td>2.</td>
+                <td>PRABAVATHY S</td>
+                <td>20</td>
+            </tr>
+        </table>
+    </div>
+</section>
+
+<section id="heading">
+    <div>
+        <h3>Headings (&lth1> to &lth6>):</h3>
+        <p>Markup for creating hierarchical titles and subtitles, with &lth1> being the highest and &lth6> the lowest.</p>
+        <a href="#headingexample" >See Example</a>
+    </div>
+    <div id="headingexample" class="example">
+        <h3>Heading Tag example</h3>
+        <h1>h1</h1>
+        <h2>h2</h2>
+        <h3>h3</h3>
+        <h4>h4</h4>
+        <h5>h5</h5>
+        <h6>h6</h6>
+    </div>
+</section>
+
+<section id="paragraph">
+    <div>
+        <h3>Paragraph (&ltp>):</h3>
+        <p>Defines a block of text, creating a new paragraph.</p>
+        <a href="#paragraphexample" >See Example</a>
+    </div> 
+    <div id="paragraphexample" class="example">
+        <h3>Paragraph Example</h3>
+        <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed id tortor tincidunt, laoreet dolor non, gravida augue.
+            Fusce et ipsum at sapien fringilla tempus. Nullam eget purus ut purus interdum iaculis. Proin ac ex purus. Duis
+            vehicula sapien vitae justo finibus vestibulum.
+        </p>
+    </div>
+</section>
+       
+<section id="hr">
+    <div>
+        <h3>Horizontal Rule (&lthr>):</h3>
+        <p>Inserts a thematic break or divider, typically used to separate content visually.</p>
+        <a href="#hrexample">See Example</a>
+    </div>
+    <div id="hrexample" class="example">
+        <h3>hr Example:</h3>
+        <p>
+            This is the first paragraph of text.
+        </p>
+        <hr>
+        <p>
+            This is the second paragraph of text, separated by a horizontal line.
+        </p>
+    </div>
+</section>
+
+</body>
+</html>

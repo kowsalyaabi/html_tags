@@ -1,0 +1,26 @@
+body{
+    margin: 0;
+    padding:0;
+}
+.navbar{
+    padding: 20px 0;
+    margin:0;
+}
+.navbar div{
+    display: inline;
+    margin-right: 50px;
+    padding: 20px;
+}
+.navbar div:hover{
+    background-color: #C4DFDF;
+    border-radius: 10px;
+}
+.navbar a{
+    text-decoration: none;
+    color: black;
+}
+.navbar .head{
+    margin-right: 500px;
+    background-color:#C4DFDF;
+    font-weight:800;
+}
